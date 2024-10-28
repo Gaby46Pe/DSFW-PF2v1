@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%; /* para que el body y html ocupen todo el alto de la ventana */
-  background-image: url('assets/images/Moto_fut_transp.jpg');
+  background-image: url('../images/Moto_fut_transp.png');
   background-size: cover; /* para que cubra toda la pantalla */
   background-attachment: fixed; /* deja el fondo fijo */
   background-repeat: no-repeat;
