@@ -193,7 +193,7 @@ section {
 #projects img {
   margin: 20px 0; /* Espacio arriba y abajo de la imagen */
   z-index: -1;  /* Prueba del z-index, posiciona la imagen detrás del texto */
-  position: absolute;
+  position: center;
   opacity: .5;
 }
 
