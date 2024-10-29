@@ -92,7 +92,6 @@ body, html {
   margin-top: 10rem;
   padding: 3rem 0;
 }
-
  
 .card {
   display: flex;
@@ -127,12 +126,12 @@ body, html {
 
 .container-fluid.text-center {
   display: flex;
-  justify-content: center; /* Puedes ajustar esto según lo necesites */
+  justify-content: center; 
   align-items: center;
 }
 
 .col-lg-4 {
-  justify-content: flex-start; /* Asegúrate que la imagen esté alineada a la izquierda */
+  justify-content: flex-start; /* Imagen alineada a la izquierda */
 }
 
 .col-lg-8 {
@@ -183,14 +182,14 @@ h1 {
 
 /* espaciado en todas las secciones */
 
-#projects,
-#newprojects { 
-    margin-top: 10rem;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    margin-bottom: 8rem;
+section {
+  min-height: 100vh; /* Cada sección ocupa al menos el 100% de la altura de la ventana */
+  padding: 50px 20px; /* Ajusta el padding, antes 100px 20px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
 }
-
+ 
 #projects img {
   margin: 20px 0; /* Espacio arriba y abajo de la imagen */
   z-index: -1;  /* Prueba del z-index, posiciona la imagen detrás del texto */
@@ -247,7 +246,7 @@ h4 p {
   text-align:center; 
 }
 
-# morenewprojects {
+#morenewprojects {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,6 +312,7 @@ input[type="radio"] {
   margin: 10px 0;
   padding: 10px;
 }
+
 article.listas{
   color: rgb(130, 25, 244);
   width: fit-content;
@@ -336,14 +336,13 @@ table {
   margin-right: auto; 
 }
 
-  
-  td, th { 
+td, th { 
     width: 50%;
     text-align: left;
     padding: 8px;
    }
           
-   th {
+th {
     height: 40%;
    }
 
@@ -360,6 +359,7 @@ table {
   background-color: mediumpurple;
 }
 
+
 /* Diseño Responsivo */
 @media (max-width: 1080px) {
   /* Estilos para tablet horizontal */
@@ -375,5 +375,29 @@ table {
 
 @media (max-width: 375px) {
   /* Estilos para móviles 2 */
+}
+
+
+
+/* Media query para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+      width: 90%;
+  }
+}
+
+/* Media query para pantallas pequeñas (moviles) */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+
+  .container {
+      width: 95%;
+  }
 }
 
