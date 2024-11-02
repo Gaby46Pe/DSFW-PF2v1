@@ -50,7 +50,7 @@
 
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 
-              aria-expanded="false" aria-label="Toggle navigation">
+               aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler"> 
 
               <span class="navbar-toggler-icon"></span>
                 
@@ -538,6 +538,28 @@
 
     </section>
       
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        const navbarToggler = document.getElementById('navbar-toggler');
+        
+        const navbarContent = document.getElementById('navbarSupportedContent');
+    
+        navLinks.forEach(link => {
+        
+          link.addEventListener('click', function () {
+          
+            // Ocultar el menú una vez que se hace clic en un enlace
+            
+            navbarContent.classList.remove('show');
+            
+          });
+        });
+      });
+    </script>
+    
   </body>
 
 </html>
